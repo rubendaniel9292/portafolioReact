@@ -1,0 +1,12 @@
+:root {
+  --primary: #006cb5;
+  --secondary: #04b6ad;
+  --complementary: #292825;
+  --white: white;
+}
+$varela: "Varela Round", sans-serif;
+$ubuntu: "Quicksand", sans-serif;
+p {
+  font-family: $varela !important;
+  font-size: 1.4rem !important ;
+}

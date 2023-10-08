@@ -1,0 +1,211 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+:root {
+  --primary: #006cb5;
+  --secondary: #04b6ad;
+  --complementary: #292825;
+  --white: white;
+}
+body{
+  margin: 0;
+}
+$varela: "Varela Round", sans-serif;
+$ubuntu: "Quicksand", sans-serif;
+p {
+  font-family: $varela !important;
+  font-size: 1.4rem !important ;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 5rem);
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+/*1:HEADER*/
+/*Menu de navegacion*/
+.navbar {
+  background-color: var(--primary);
+  height: 4.5rem;
+  .container-fluid {
+    background-color: var(--primary);
+  }
+}
+#menu {
+  width: 100vw;
+  z-index: 1030;
+}
+.active {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.navbar-nav a {
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--secondary);
+    border-radius: 10px;
+  }
+}
+.text-container {
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center,
+  
+
+}
+.text-containerp{
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+
+}
+
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  background: url("./IMG/portada1.webp") no-repeat center center/cover;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-family: $varela;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 5);
+  
+}
+.btn-p {
+  width: 280px;
+  height: 60px;
+  font-size: 1.3rem;
+  background-color: var(--secondary);
+  border-radius: 35px;
+  font-family: $varela;
+}
+.p-welcome {
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 5);
+  font-size: 3rem !important;
+}
+
+/*2: SOBRE MÍ*/
+h2 {
+  text-shadow: 1px 1px 2px rgb(131, 131, 131);
+}
+
+.pdes {
+  font-size: 2rem !important;
+}
+#about .mt5 {
+  margin-top: 4.5rem;
+}
+
+/*3: CONOCIMIENTOS*/
+.conocimientos {
+  background-color: var(--complementary);
+}
+
+.li {
+  font-family: $ubuntu;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  list-style: none;
+}
+.conocimientos .row .col-sm-4 {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+/*4: PORTAFOLIO*/
+.portafolio .row1 {
+  background-color: var(--secondary);
+}
+/*iconos*/
+.fas,
+.fab {
+  transition: 0.2s ease-in-out;
+}
+
+.fas:hover,
+.fab:hover {
+  transform: scale(1.5, 1.5);
+}
+/* CSS para centrar el modal y darle un aspecto de pop-up */
+/* CSS para centrar el modal y darle un aspecto de pop-up */
+.modal-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      /*Fondooscurosemitransparente*/
+  
+}
+
+.modal {
+  background-color: rgb(68, 179, 27);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  /* Estilos adicionales para el contenido del modal */
+  background-color: aquamarine;
+  
+}
+
+
+/*
+.fa-facebook-square {
+  color: #1442db;
+}
+
+.fa-instagram-square {
+  color: #cf39ca;
+}
+
+.fa-linkedin {
+  color: #0897d4;
+}
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-whatsapp-square {
+  color: #2eca43;
+}
+.fa-telegram {
+  color: #26a4e3;
+}*/
+.triangulo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--secondary);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+
+/*5: CONTACTOS*/
+#contacto .row{
+  padding-top: 6.5rem;
+}
+
+.footer {
+  min-height: 5rem;
+  background-color: var(--complementary);
+
+  a {
+    line-height: 1.5rem;
+    font-family: $varela !important;
+  }
+}
