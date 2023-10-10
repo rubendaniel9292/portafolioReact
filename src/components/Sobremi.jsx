@@ -15,8 +15,8 @@ const Sobremi = () => {
                             <h2 className="h2 fw-bold">SOBRE MÍ</h2>
                             <p className="pdes">
                                 Mi nombre es Daniel Ruben Rivas Saltos, Ingeniero en Sistemas graduado en la Universidad
-                                Técnica Estatal de Quevedo, Ecuador, especializádome en desarrollo web frontend y diseño de
-                                interfaces de manera autodidacta para estar a la vanguardia de la tecnología. Me gusta estar
+                                Técnica Estatal de Quevedo, Ecuador, especializádome en desarrollo web frontend de manera autodidacta 
+                                para estar actualizado en los lenguaje y herramietnas del desarrollo web. Me gusta estar
                                 en constante aprendizaje en el dominio en las tecnologías
                                 web que nos obligan a quienes nos dedicamos a esta profesión a estar en constante
                                 actualización y aprendizaje.

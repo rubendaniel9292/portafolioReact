@@ -7,7 +7,7 @@ export default function Modal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return createPortal(
-    <div className="modal-container">
+    <div className="modal-container d-flex justify-content-center align-items-center">
       <ModalContent onClose={onClose} />
     </div>,
     document.body

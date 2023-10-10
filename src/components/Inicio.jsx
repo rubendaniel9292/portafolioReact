@@ -12,7 +12,7 @@ const Inicio = () => {
       backSpeed: 50,
       loop: true,
       showCursor: false,
-      
+
     });
 
     return () => {
@@ -28,11 +28,10 @@ const Inicio = () => {
 
         <div className="container-fluid">
           <div className="row">
-            <div className=" text-center text-container">
+            <div className="text-container">
               <h1 ref={el} className="text-white fw-bold  display-1">DanielRivasWeb</h1>
             </div>
-            <div class="col-12 text-center text-containerp">
-
+            <div class="col-12 text-center text-containerp d-flex align-items-center justify-content-center">
               <p className="p-welcome text-white fw-bold display-6">
                 Bienvenidos a mi sitio. Un espacio donde te enseño mi trabajo como diseñador y
                 desarrollador web con las tecnologías más demandadas actualmente en la industria de la
