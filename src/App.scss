@@ -115,7 +115,7 @@ h2 {
 /*4: PORTAFOLIO*/
 .portafolio .row1 {
   background-color: var(--secondary);
-  height: 17rem;
+  height: 15rem;
 }
 /*iconos*/
 .fas,
@@ -127,7 +127,6 @@ h2 {
 .fab:hover {
   transform: scale(1.5, 1.5);
 }
-/* CSS para centrar el modal y darle un aspecto de pop-up */
 
 .modal-container {
   position: absolute;
@@ -139,13 +138,10 @@ h2 {
 
   /*Fondooscurosemitransparente*/
   .modal {
-   
     border-radius: 8px;
 
-
-  
     .modal-content {
-      width: 40%;
+      width: 55%;
       min-height: 30%;
       .conten-title {
         height: 3rem;
@@ -157,7 +153,13 @@ h2 {
         -o-border-radius: 8px 8px 0 0;
       }
       .btn:hover {
-        background-color: var(--secondary) !important;
+        background-color: var(--secondary);
+      }
+      #btnc {
+        background-color: red;
+      }
+      #btnc :hover {
+        background-color: red !important;
       }
     }
   }

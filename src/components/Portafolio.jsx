@@ -1,34 +1,22 @@
 import React, { useState } from 'react';
 import Modal from '../modal/Modal';
-import ModalContent from '../modal/ModalContent';
 import { dataProyect } from '../helper/dataProyect';
 
-const Portafolio = ({ limit }) => {
+const Portafolio = () => {
     const [showModal, setShowModal] = useState(false);
     const [selectedProyect, setSelectedProyect] = useState(null);
 
-
-    {/* 
-  const openModal = () => {
+    const openModal = (index) => {
+        console.log(index)
+        const selectedProject = dataProyect[index];
+        //console.log(dataProyect);
+        setSelectedProyect(selectedProject);
         setShowModal(true);
     };
-
     const closeModal = () => {
+        setSelectedProyect(null);
         setShowModal(false);
-    };
-*/}
-
-
-    const openModal = (proyect) => {
-        setSelectedProyect(proyect);// Guarda el proyecto seleccionado
-        setShowModal(true);
-    };
-
-    const closeModal = () => {
-        setSelectedProyect(null);// Restablece el proyecto seleccionado al cerrar el modal
-        setShowModal(false);
-    };
-
+    }
 
     return (
         <>
@@ -42,62 +30,39 @@ const Portafolio = ({ limit }) => {
                         </p>
                         <div className="triangulo position-absolute"></div>
                     </div>
-
                     <div className="row  text-center mt-5">
                         {
-                            dataProyect.slice(0, limit).map(proyect => {
+                            dataProyect.map((proyect, index) => {
+                                //console.log(proyect, index);
                                 return (
-                                    <div className="col-12 col-sm-3" key={proyect.title}>
+                                    <div className="col-12 col-sm-3" key={index} >
                                         <h3 >{proyect.title}</h3>
                                         <div className="clipping-container">
-                                            <button key={proyect} className="btn btn-p my-3 text-white fw-bold"
-                                                onClick={() => openModal(proyect)} >
+                                            <button key={index}
+                                                className="btn btn-p my-3 text-white fw-bold"
+                                                onClick={() => openModal(index)} >
                                                 Ver proyecto
                                             </button>
-                                            {selectedProyect && ( // Renderiza el modal solo si selectedProyect tiene un valor
-                                                <Modal isOpen={showModal} onClose={closeModal}>
-                                                    <ModalContent proyect={selectedProyect} onClose={closeModal} />
-                                                </Modal>
-                                            )}
-
                                         </div>
-
-                                        {/*<a href="https://rubendaniel9292.github.io/proyectomedico.github.io/"
-                                        className="btn btn-p my-3 text-white fw-bold" target="_blank" rel="noopener noreferrer">
-                                        Ver proyecto
-                                    </a>*/}
+                                    
 
                                     </div>
-
                                 );
                             })
                         }
-
-                        {/* <div className="col-12 col-sm-4">
-                            <p className="t">Sitio web de una agecia de marketing y publicidad</p>
-                            <a href="https://rubendaniel9292.github.io/bootstrap1.github.io/"
-                                className="btn btn-p my-3 text-white fw-bold" target="_blank" rel="noopener noreferrer">
-                                Ver proyecto
-                            </a>
-                        </div>
-                        <div className="col-12 col-sm-4">
-                            <p className="">Aplicación sencilla con TS </p>
-                            <a href="https://rubendaniel9292.github.io/pelicula.github.io/"
-                                className="btn btn-p my-3 text-white fw-bold" target="_blank" rel="noopener noreferrer">
-                                Ver proyecto
-                            </a>
-
-                        </div>*/}
-
                     </div>
-
                 </div>
+                {selectedProyect && (
+                    // Renderiza el modal solo si selectedProyect tiene un valor
+                    <Modal isOpen={showModal} onClose={closeModal} proyect={selectedProyect}>
 
-
+                    </Modal>
+                )}
 
             </section>
         </>
     )
 }
-
 export default Portafolio;
+
+

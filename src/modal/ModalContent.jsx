@@ -1,15 +1,14 @@
 // ModalContent.js
 import React from 'react';
-import { dataProyect } from '../helper/dataProyect';
+const ModalContent = ({ proyect, onClose }) => {
+  if (!proyect) return console.error('Error al recibir el objeto', proyect);
 
-export default function ModalContent({ onClose, proyect }) {
-  if (!proyect) return null;
+  console.log('Proyecto en ModalContent:', proyect);
 
   return (
     <>
       <div className="modal d-flex justify-content-center align-items-center mx-auto">
-
-        <article className="modal-content text-center" key={proyect.title}>
+        <article className="modal-content text-center">
           <div className='conten-title'>
             <h3 className='h2 text-white fw-bold'>{proyect.title}</h3>
           </div>
@@ -17,28 +16,19 @@ export default function ModalContent({ onClose, proyect }) {
           <p>Tecnologías: {proyect.technologies}</p>
           <p>Descripción: {proyect.description}</p>
           <div className='d-flex justify-content-around'>
-            <button onClick={onClose} className="btn btn-p my-3 text-white fw-bold " >Ir al sitio</button>
-            <button onClick={onClose} className="btn btn-p my-3 text-white fw-bold" >Cerrar</button>
+            <a href={proyect.url}
+              className="btn btn-p my-3 text-white fw-bold" target="_blank" rel="noopener noreferrer">
+              Ir al sitio del proyecto
+            </a>
+            <button onClick={onClose}  id='btnc' className="btn btn-p my-3 text-white fw-bold">Cerrar</button>
           </div>
         </article>
+      </div>
 
-      </div>
-      {/*
-     <div className="modal d-flex justify-content-center align-items-center mx-auto">
-        <div className="modal-content text-center">
-          <div className='conten-title'>
-            <h4 className='h2 text-white fw-bold'>Clinica dental</h4>
-          </div>
-          <p></p>
-          <div className='d-flex justify-content-around'>
-            <button onClick={onClose} className="btn btn-p my-3 text-white fw-bold " >Ir al sitio</button>
-            <button onClick={onClose} className="btn btn-p my-3 text-white fw-bold" >Cerrar</button>
-          </div>
-        </div>
-      </div>
-    */}
+
 
     </>
-
   );
 }
+
+export default ModalContent;
