@@ -6,6 +6,10 @@ const Contacto = () => {
             <section id="contacto" className="contacto section">
                 <div className="container-fluid ">
                     <div className="row  text-center">
+                        <div className="col-12">
+                            <h2 className="h2 fw-bold">Si deseas trabajar conmigo, puedes contactarme aquí..</h2>
+
+                        </div>
                         <div className="col-12 col-sm-6">
                             <div className="text-center mb-2">
                                 <p>Detalles de contacto:</p>
@@ -14,17 +18,12 @@ const Contacto = () => {
                                 <i className="fab fa-whatsapp-square mx-2 fa-3x"></i>
                                 <i className="fab fa-telegram mx-2 fa-3x"></i>
                                 <p>Mis redes</p>
-                                <i className="fab fa-facebook-square mx-2 fa-3x"></i>
-                                <i className="fab fa-linkedin mx-2 fa-3x"></i>
-                                <i className="fab fa-twitter-square mx-2 fa-3x"></i>
-                                <i className="fab fa-instagram-square mx-2 fa-3x"></i>
-                                <i></i>
                             </div>
 
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className="mb-2">
-                                <p>Escríbeme</p>
+                                <p>Evíame un e-mail:</p>
                                 <form action="">
                                     <div className="mb-3">
                                         <label for="email" className="form-label">E-mail</label>

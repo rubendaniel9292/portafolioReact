@@ -12,7 +12,11 @@ const Sobremi = () => {
                             <img src={foto1} alt="Foto" className="img-fluid mt-5"></img>
                         </div>
                         <div className="col-lg-8 col-md-12  col-sm-12 mt5">
+                            <div className="col-12">
                             <h2 className="h2 fw-bold">SOBRE MÍ</h2>
+
+                            </div>
+                            
                             <p className="pdes">
                                 Mi nombre es Daniel Ruben Rivas Saltos, Ingeniero en Sistemas graduado en la Universidad
                                 Técnica Estatal de Quevedo, Ecuador, especializádome en desarrollo web frontend de manera autodidacta 

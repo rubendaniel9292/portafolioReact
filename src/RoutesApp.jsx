@@ -6,7 +6,6 @@ import Footer from './layoud/Footer';
 import Sobremi from './components/Sobremi';
 import Conocimientos from './components/Conocimientos';
 import Portafolio from './components/Portafolio';
-import Contacto from './components/Contacto';
 
 const RoutesApp = () => {
   return (
@@ -22,12 +21,10 @@ const RoutesApp = () => {
           <Route path='/sobre-mi' element={<Sobremi />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
           <Route path='/portafolio' element={<Portafolio />} />
-          <Route path='/contacto' element={<Contacto />} />
+          
           <Route path='/*' element={<h1>Error 404</h1>} />
         </Routes>
-        {/*footer*/}
-
-
+  
       </main>
       <Footer />
     </BrowserRouter>

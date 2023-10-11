@@ -10,7 +10,7 @@ const Conocimientos = () => {
                 <div class="container-fluid">
                     <div class="row text-center">
                         <div class="col-12">
-                            <h2 class="h2 fw-bold text-white mt-4">MIS CONOCIMINTOS</h2>
+                            <h2 class="h2 fw-bold mt-4">MIS CONOCIMINTOS</h2>
                         </div>
                     </div>
                     <div class="row text-center mt-2">

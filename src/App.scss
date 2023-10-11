@@ -1,16 +1,16 @@
 /*Estilos generales*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+// importing core styling file
+
+
 :root {
   --primary: #006cb5;
   --secondary: #04b6ad;
   --complementary: #292825;
   --white: white;
 }
-body {
-  margin: 0;
-}
+
 $varela: "Varela Round", sans-serif;
 $ubuntu: "Quicksand", sans-serif;
 p {
@@ -37,6 +37,36 @@ p {
   width: 100vw;
   z-index: 1030;
 }
+
+/* Estilos para el botón del menú */
+#menu .navbar-toggler {
+  padding: auto;
+  border: 0;
+  border-radius: 0;
+  outline: 0 !important;
+  box-shadow: none !important;
+  padding: 1.25rem 0.75rem !important;
+  color: transparent !important;
+  .navbar-brand {
+    background-image: none;
+  }
+}
+
+/* Estilos para el ícono del menú */
+#menu .boton-menu, .icono-x {
+  font-weight: 1000;
+  font-size: 1.7rem;
+}
+
+
+/* Estilos para expandir y colapsar el menú */
+#menu.expanded .navbar-collapse {
+  display: block;
+  transition: max-height 0.5s;
+}
+
+
+
 .active {
   background-color: var(--secondary);
   border-radius: 10px;
@@ -47,6 +77,7 @@ p {
   &:hover {
     background-color: var(--secondary);
     border-radius: 10px;
+
   }
 }
 .text-container {
@@ -198,10 +229,18 @@ h2 {
   transform: translateX(-50%) translateY(50%) rotate(45deg);
 }
 
-/*5: CONTACTOS*/
+/*5: CONTACTOS*(pendiente para mas adelante)*/
+/*
 #contacto .row {
   padding-top: 6.5rem;
 }
+
+textarea{
+  resize: none;
+  form-sizing:conten;
+}
+
+*/
 
 .footer {
   min-height: 5rem;
