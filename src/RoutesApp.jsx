@@ -21,10 +21,8 @@ const RoutesApp = () => {
           <Route path='/sobre-mi' element={<Sobremi />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
           <Route path='/portafolio' element={<Portafolio />} />
-          
           <Route path='/*' element={<h1>Error 404</h1>} />
         </Routes>
-  
       </main>
       <Footer />
     </BrowserRouter>

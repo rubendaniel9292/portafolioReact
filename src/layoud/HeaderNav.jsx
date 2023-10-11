@@ -37,7 +37,7 @@ const HeaderNav = () => {
                                 <li className="nav-item mx-1 my-1">
                                     <NavLink to='/conocimientos' className="nav-link text-white" aria-current="page">Conocimientos</NavLink>
                                 </li>
-                                <li className="nav-item mx-1 my-1">
+                                <li className="nav-item mx-1 my-1 pb-1">
                                     <NavLink to='/portafolio' className="nav-link text-white" aria-current="page">Portafolio</NavLink>
                                 </li>
 

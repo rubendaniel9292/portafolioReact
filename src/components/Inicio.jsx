@@ -25,7 +25,6 @@ const Inicio = () => {
 
       <section id="inicio" className="welcome section">
 
-
         <div className="container-fluid">
           <div className="row">
             <div className="text-container">
