@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rubendaniel9292/portafolioReact/static/css/main.2c53c2cc.css",
+    "main.js": "/rubendaniel9292/portafolioReact/static/js/main.8c8c3579.js",
+    "static/media/foto1.jpg": "/rubendaniel9292/portafolioReact/static/media/foto1.1d3baf6f37ac9046a791.jpg",
+    "static/media/portada1.webp": "/rubendaniel9292/portafolioReact/static/media/portada1.400dd09c3d827407200a.webp",
+    "index.html": "/rubendaniel9292/portafolioReact/index.html",
+    "main.2c53c2cc.css.map": "/rubendaniel9292/portafolioReact/static/css/main.2c53c2cc.css.map",
+    "main.8c8c3579.js.map": "/rubendaniel9292/portafolioReact/static/js/main.8c8c3579.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c53c2cc.css",
+    "static/js/main.8c8c3579.js"
+  ]
+}
