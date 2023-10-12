@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portafolioWebReact/static/css/main.f25dc8c6.css",
+    "main.js": "/portafolioWebReact/static/js/main.7e7b2dd5.js",
+    "static/media/foto1.jpg": "/portafolioWebReact/static/media/foto1.1d3baf6f37ac9046a791.jpg",
+    "static/media/portada1.webp": "/portafolioWebReact/static/media/portada1.400dd09c3d827407200a.webp",
+    "index.html": "/portafolioWebReact/index.html",
+    "main.f25dc8c6.css.map": "/portafolioWebReact/static/css/main.f25dc8c6.css.map",
+    "main.7e7b2dd5.js.map": "/portafolioWebReact/static/js/main.7e7b2dd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25dc8c6.css",
+    "static/js/main.7e7b2dd5.js"
+  ]
+}
