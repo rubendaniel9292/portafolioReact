@@ -14,17 +14,17 @@ export const dataProyect = [
         url:'https://rubendaniel9292.github.io/bootstrap1.github.io/'
     },
     {
-        title: 'App peliculas',
+        title: 'App películas',
         technologies: 'HTML5, CSS,SAAS, TS',
         category: 'desarrollo front-end',
-        description: 'App sencilla de gestion de peliculas, solo frontend',
+        description: 'App sencilla de gestion de películas, solo frontend',
         url:'https://rubendaniel9292.github.io/pelicula.github.io/'
     },
     {
-        title: 'App peliculas React',
+        title: 'App películas con React',
         technologies: 'HTML5, CSS,SAAS, TS, React',
         category: 'desarrollo front-end',
-        description: 'App sencilla de gestion de peliculas, solo frontend, con React',
+        description: 'App sencilla de gestion de películas, solo frontend, con React',
         url:'https://rubendaniel9292.github.io/PelisReact/'
     }
     

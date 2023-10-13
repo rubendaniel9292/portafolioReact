@@ -14,7 +14,7 @@ const Conocimientos = () => {
                         </div>
                     </div>
                     <div class="row text-center mt-4">
-                        <h3 class="h3 fw-bold text-white mt-2">Tegnologías y herramientas de desarrollo:</h3>
+                        <h3 class="h3 fw-bold text-white mt-2">Tecnologías y herramientas de desarrollo:</h3>
                         <div class="col-12 col-sm-4">
                             <p class="text-white">Desarrollo front-end</p>
                             <p><FontAwesomeIcon icon={faJs} size='xl' className='text-white' flip /></p>
