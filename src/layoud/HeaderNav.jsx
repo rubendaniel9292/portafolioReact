@@ -1,15 +1,21 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState} from 'react';
+
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const HeaderNav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [menuClose, setMenuClose] = useState(true);
+
+
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+        setMenuClose(menuClose);
     };
+
     return (
         <>
             <header >
@@ -20,7 +26,7 @@ const HeaderNav = () => {
                             aria-controls="navbarNav">
                             <span
                                 className={`navbar-brand boton-menu text-white navbar-toggler-icon ${menuOpen ? 'icono-x' : ''}`}>
-                                {menuOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+                                {menuOpen ? <FontAwesomeIcon icon={faTimes} beat /> : <FontAwesomeIcon icon={faBars} beat />}
                             </span>
                         </button>
 
@@ -28,17 +34,25 @@ const HeaderNav = () => {
                             <ul className='navbar-nav text-center fw-bold'>
 
                                 <li className="nav-item mx-1 my-1">
-                                    <NavLink to='/inicio' className={'nav-link text-white'}>Inicio</NavLink>
+                                    <NavLink to='/inicio' className={'nav-link text-white'} onClick={() => { toggleMenu(); }}>
+                                        Inicio
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item mx-1 my-1">
-                                    <NavLink to='/sobre-mi' className="nav-link text-white" aria-current="page">Sobre mí</NavLink>
+                                    <NavLink to='/sobre-mi' className="nav-link text-white" aria-current="page" onClick={toggleMenu}>
+                                        Sobre mí
+                                    </NavLink>
                                 </li>
 
                                 <li className="nav-item mx-1 my-1">
-                                    <NavLink to='/conocimientos' className="nav-link text-white" aria-current="page">Conocimientos</NavLink>
+                                    <NavLink to='/conocimientos' className="nav-link text-white" aria-current="page" onClick={toggleMenu}>
+                                        Conocimientos
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item mx-1 my-1 pb-1">
-                                    <NavLink to='/portafolio' className="nav-link text-white" aria-current="page">Portafolio</NavLink>
+                                    <NavLink to='/portafolio' className="nav-link text-white" aria-current="page" onClick={toggleMenu}>
+                                        Portafolio
+                                    </NavLink>
                                 </li>
 
                             </ul>
