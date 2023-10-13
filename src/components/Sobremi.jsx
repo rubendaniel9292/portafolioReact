@@ -1,11 +1,18 @@
 import React from 'react';
 import foto1 from '../IMG/foto1.jpg';
+import { useLocation } from 'react-router-dom';
 
 const Sobremi = () => {
+    const location = useLocation();
+    let minHeight;
+    if (location.pathname === '/sobre-mi') {
+        // Altura para la vista de inicio
+        minHeight = 'calc(100vh + 65rem)';
+    }
     return (
         <>
 
-            <section id="about" className="abaout section">
+            <section id="about" className="abaout section" style={{ minHeight }}>
                 <div class="container-fluid">
                     <div class="row text-center">
                         <div className="col-lg-4 col-md-12 col-sm-12 mt-5">

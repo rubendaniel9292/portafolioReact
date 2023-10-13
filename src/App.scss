@@ -23,12 +23,11 @@ p {
   border-bottom: 2px rgb(255, 255, 255) solid;
 }
 
-@media (max-width: 727px) {
-  .section{
-    min-height:100vh;
+@media (max-width: 576px) {
+  .section {
+    min-height: calc(100vh + 40rem);//correctamente en inicio
   }
 }
-
 
 /*1:HEADER*/
 /*Menu de navegacion*/
@@ -121,7 +120,6 @@ h1 {
 /*2: SOBRE MÍ*/
 h2 {
   text-shadow: 1px 1px 2px rgb(131, 131, 131);
-  
 }
 
 .pdes {
@@ -150,10 +148,9 @@ h2 {
 /*4: PORTAFOLIO*/
 .portafolio .row1 {
   background-color: var(--secondary);
-  min-height: 14rem;
+  min-height: 18rem;
   padding-top: 6rem;
 }
-
 
 .modal-container {
   position: absolute;
@@ -163,7 +160,6 @@ h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 
-  /*Fondooscurosemitransparente*/
   .modal {
     border-radius: 8px;
 
@@ -193,6 +189,17 @@ h2 {
 }
 .clipping-container .btn:hover {
   background-color: var(--secondary);
+}
+
+@media(max-width: 576px){
+  .modal .modal-content {
+    width: 100% !important;
+    min-height: 40% !important;
+    .btn{
+      width: 260px !important;
+      height: 70px;
+    }
+  }
 }
 /*
 .fa-facebook-square {
@@ -244,10 +251,7 @@ textarea{
     line-height: 1.5rem;
     font-family: $varela !important;
     .fa-linkedin {
-      color: #0897d4  !important;
-      
+      color: #0897d4 !important;
     }
-    
   }
- 
 }

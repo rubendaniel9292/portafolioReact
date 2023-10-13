@@ -13,7 +13,7 @@ const Conocimientos = () => {
                             <h2 class="h2 fw-bold mt-4">MIS CONOCIMINTOS</h2>
                         </div>
                     </div>
-                    <div class="row text-center mt-2">
+                    <div class="row text-center mt-4">
                         <h3 class="h3 fw-bold text-white mt-2">Tegnologías y herramientas de desarrollo:</h3>
                         <div class="col-12 col-sm-4">
                             <p class="text-white">Desarrollo front-end</p>

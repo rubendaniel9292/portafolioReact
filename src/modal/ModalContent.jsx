@@ -20,7 +20,7 @@ const ModalContent = ({ proyect, onClose }) => {
               className="btn btn-p my-3 text-white fw-bold" target="_blank" rel="noopener noreferrer">
               Ir al sitio del proyecto
             </a>
-            <button onClick={onClose}  id='btnc' className="btn btn-p my-3 text-white fw-bold">Cerrar</button>
+            <button onClick={onClose} id='btnc' className="btn btn-p my-3 text-white fw-bold">Cerrar</button>
           </div>
         </article>
       </div>

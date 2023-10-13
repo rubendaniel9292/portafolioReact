@@ -36,7 +36,7 @@ const Portafolio = () => {
                             dataProyect.map((proyect, index) => {
                                 //console.log(proyect, index);
                                 return (
-                                    <div className="col-12 col-md-6 col-lg-3 my-2" key={index} >
+                                    <div className="col-12 col-md-6 col-lg-3 my-4" key={index} >
                                         <h3 >{proyect.title}</h3>
                                         <div className="clipping-container">
                                             <button key={index}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
+//import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
+import { Routes, Route, HashRouter, Navigate } from 'react-router-dom'; // Cambio a HashRouter
 import Inicio from './components/Inicio';
 import HeaderNav from './layoud/HeaderNav';
 import Footer from './layoud/Footer';
@@ -9,8 +10,8 @@ import Portafolio from './components/Portafolio';
 
 const RoutesApp = () => {
   return (
+    <HashRouter> {/* Cambiar de BrowserRouter a HashRouter */}
 
-    <BrowserRouter>
       {/*header y navegacion*/}
 
       <main>
@@ -21,13 +22,14 @@ const RoutesApp = () => {
           <Route path='/sobre-mi' element={<Sobremi />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
           <Route path='/portafolio' element={<Portafolio />} />
-          <Route path='/*' element={<h1>Error 404</h1>} />
+          <Route path='/*' element={<Inicio />} />
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
 
   )
 }
+
 
 export default RoutesApp;
