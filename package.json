@@ -1,7 +1,7 @@
 {
   "name": "portafolioweb",
   "version": "0.1.0",
-  "homepage": "https://rubendaniel9292.github.io/portafolioWebReact/",
+  "homepage": "https://www.danielrivasweb.com",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
